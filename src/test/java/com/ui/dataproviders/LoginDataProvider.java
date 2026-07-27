@@ -23,7 +23,7 @@ public class LoginDataProvider {
 		// TODO Auto-generated method stub
 		FileReader fileReader = null;
 		Gson gson = new Gson();
-		File testDataFile = new File(System.getProperty("user.dir")+"\\testData\\logindata.json");
+		File testDataFile = new File(System.getProperty("user.dir")+"/testData/logindata.json");
 		try {
 			 fileReader = new FileReader(testDataFile);
 		} catch (FileNotFoundException e) {
