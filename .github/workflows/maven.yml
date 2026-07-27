@@ -21,8 +21,8 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Compile Project
-      run: mvn clean compile
+    - name: Run Tests
+      run: mvn clean test -Dbrowser=chrome -DisLambdaTest=false -DisHeadless=true
 
     - name: Upload Test logs
       if: always()
